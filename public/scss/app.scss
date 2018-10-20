@@ -1,0 +1,36 @@
+$principal_color: #3498db;
+
+.messages{
+	border: solid 2px $principal_color;
+	border-top: 0;
+	padding: 20px;
+	padding-bottom: 50px;
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	overflow: auto;
+	.message{
+		display: flex;
+		align-items: center;
+		background-color: $principal_color;
+		padding: 10px 10px;
+		border-radius: 5px;
+		width: 40%;
+		margin-bottom: 10px;
+		flex-wrap:wrap;
+		.user{
+			font-weight: bold;
+			margin-right: 10px;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.send-message{
+	input{
+		height: 10vh;
+		border: solid 2px $principal_color;
+		border-top: 0;
+		border-radius: 0;
+	}
+}

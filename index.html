@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Chat app</title>
+	<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/public/css/app.css">
+</head>
+<body>
+
+	<div id="chat-app">
+		<div class="container">
+			<div class="row justify-content-end">
+				<div class="col-lg-8">
+					<div class="messages">
+						
+					</div>
+					<form action="#" method="#" class="send-message" autocomplete="off">
+						<div class="form-group">
+					    <input type="text" class="form-control" name="message" id="message" placeholder="Nombre" required>
+					  </div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	
+	<div class="modal" tabindex="-1" role="dialog" id="room-modal">
+		<form action="#" method="post" class="login">
+			<div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title">Coloca tu nombre y el salon dopnde quieres entrar</h5>
+		        
+		      </div>
+		      <div class="modal-body">
+		        <div class="form-group">
+					    <label for="name">Tu nombre</label>
+					    <input type="text" class="form-control" name="name" id="name" placeholder="Nombre" required>
+					  </div>
+
+					  <div class="form-group">
+				    <label>Salon</label>
+				    <select class="form-control" name="room" required>
+				    	<option value="" selected disabled></option>
+				      <option value="1">1</option>
+				      <option value="2">2</option>
+				      <option value="3">3</option>
+				      <option value="4">4</option>
+				      <option value="5">5</option>
+				    </select>
+				  </div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="submit" class="btn btn-primary">Entrar</button>
+		      </div>
+		    </div>
+		  </div>
+		</form>
+	  
+	</div>
+
+
+	
+	<script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="/node_modules/socket.io-client/dist/socket.io.js"></script>
+	<script src="/public/app.js"></script>
+</body>
+</html>

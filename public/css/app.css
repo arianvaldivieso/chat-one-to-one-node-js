@@ -1,0 +1,28 @@
+.messages {
+  border: solid 2px #3498db;
+  border-top: 0;
+  padding: 20px;
+  padding-bottom: 50px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: auto; }
+  .messages .message {
+    display: flex;
+    align-items: center;
+    background-color: #3498db;
+    padding: 10px 10px;
+    border-radius: 5px;
+    width: 40%;
+    margin-bottom: 10px;
+    flex-wrap: wrap; }
+    .messages .message .user {
+      font-weight: bold;
+      margin-right: 10px;
+      text-transform: uppercase; }
+
+.send-message input {
+  height: 10vh;
+  border: solid 2px #3498db;
+  border-top: 0;
+  border-radius: 0; }
